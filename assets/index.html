@@ -6,15 +6,18 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" type="image/x-icon" href="__ASSETS_PREFIX__favicon.ico">
   <link rel="stylesheet" href="__ASSETS_PREFIX__index.css">
+  <link rel="stylesheet" href="/style.css">
   <script>
     DATA = __INDEX_DATA__
   </script>
   <script src="__ASSETS_PREFIX__index.js"></script>
+  <script src="/custom.js" defer></script>
 </head>
 
 <body>
   <div class="head">
     <div class="breadcrumb"></div>
+    <div class="all-tools">
     <div class="toolbox">
       <a href="" class="control download hidden" title="Download file" download="">
         <svg width="16" height="16" viewBox="0 0 16 16">
@@ -77,6 +80,7 @@
       <input id="search" title="Searching for folders or files" name="q" type="text" maxlength="128" autocomplete="off" tabindex="1">
       <input type="submit" hidden />
     </form>
+  </div>
     <div class="toolbox-right">
       <div class="login-btn hidden" title="Login for upload/move/delete/edit permissions">
         <svg width="16" height="16" viewBox="0 0 16 16">
@@ -94,7 +98,7 @@
         <span class="user-name"></span>
       </div>
       <div class="save-btn hidden" title="Save file">
-        <svg viewBox="0 0 1024 1024" width="24" height="24">
+        <svg viewBox="0 0 1024 1024" width="32" height="232">
           <path
             d="M426.666667 682.666667v42.666666h170.666666v-42.666666h-170.666666z m-42.666667-85.333334h298.666667v128h42.666666V418.133333L605.866667 298.666667H298.666667v426.666666h42.666666v-128h42.666667z m260.266667-384L810.666667 379.733333V810.666667H213.333333V213.333333h430.933334zM341.333333 341.333333h85.333334v170.666667H341.333333V341.333333z"
             fill="#444444" p-id="8311"></path>
